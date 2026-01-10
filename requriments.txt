@@ -1,0 +1,4 @@
+PyQt6
+pillow
+reportlab
+pywin32
