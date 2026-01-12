@@ -4,7 +4,7 @@ A modern, fast, and open-source file converter built with Python & PyQt.
 Convert images, text files, Word documents, and PowerPoint presentations into multiple formats with a clean UI.
 
 > “Simple to use. Powerful under the hood.”
-![OpenConvert Screenshot](screenshot.png)
+![OpenConvert Screenshot](Screenshot 2026-01-12 183125.png)
 
 ---
 
