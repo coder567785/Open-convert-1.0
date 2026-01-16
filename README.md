@@ -74,45 +74,6 @@ All of these convert to **PDF**.
 
 ---
 
-## 📦 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/OpenConvert.git
-cd OpenConvert
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the app:
-
-```bash
-python main.py
-```
-
----
-
-## 🪟 Windows App Icon Setup
-
-The app uses a real Windows icon:
-
-* Title bar
-* Taskbar
-* Alt+Tab
-
-Make sure `icons/app.ico` exists and contains:
-
-```
-256, 128, 64, 48, 32, 16 px
-```
-
----
-
 ## 🧪 Future Plans
 
 * Drag & Drop support
@@ -155,8 +116,4 @@ OpenConvert is built not just as a tool, but as a learning-focused project that 
 * Windows integration
 * Clean project structure
 * Open-source collaboration
-
 ---
-
-If you’re a student or beginner and want to see how real software is built, OpenConvert is a perfect place to start.
-
