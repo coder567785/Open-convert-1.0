@@ -1,55 +1,76 @@
-# 🚀 OpenConvert
+# OpenConvert 🚀
 
-A modern, fast, and open-source file converter built with Python & PyQt.  
-Convert images, text files, Word documents, and PowerPoint presentations into multiple formats with a clean UI.
+**Simple • Fast • Open Source**
 
-> “Simple to use. Powerful under the hood.”
-[OpenConvert Screenshot](Screenshot 2026-01-12 183125.png)
+OpenConvert is a modern, lightweight, multi-format file converter built with **Python + PyQt**.
+It focuses on clean UI, offline usage, and real desktop-software experience.
+
+<p align="center">
+  <img src="images/ui.png" width="700">
+</p>
 
 ---
 
 ## ✨ Features
 
+* Modern dark UI (PyQt6)
+* Choose input file
+* Choose output format
+* Choose custom save location
+* Progress bar with background processing
+* Fast, offline conversion
+* Open source and beginner-friendly
+* Windows native look with taskbar & title bar icon
+
+---
+
+## 🔄 Supported Formats
+
 ### 🖼 Image Conversions
-Supports:
-- Input: `PNG`, `JPG`, `JPEG`, `WEBP`, `BMP`, `TIFF`
-- Output: `PNG`, `JPG`, `JPEG`, `WEBP`, `BMP`, `TIFF`
 
-Automatically handles:
-- Transparency
-- Color conversion (for JPG/JPEG)
+Input & Output:
 
----
+* PNG
+* JPG / JPEG
+* WEBP
+* BMP
+* TIFF
 
-### 📄 Document Conversions
-- `TXT → PDF`
-- `DOCX → PDF`
-- `PPT → PDF`
-- `PPTX → PDF`
-
-(Word & PowerPoint conversions require Microsoft Office to be installed on Windows.)
+You can convert between any of these image formats.
 
 ---
 
-### 🎨 UI
-- Built with **PyQt6**
-- Dark modern theme
-- Simple, minimal workflow:
-  1. Select file  
-  2. Choose output format  
-  3. Click Convert  
+### 📄 Document → PDF Conversions
 
-Output file is saved in the **same folder** as the input.
+| Format  | Description    |
+| ------- | -------------- |
+| `.txt`  | Text file      |
+| `.doc`  | Microsoft Word |
+| `.docx` | Microsoft Word |
+| `.rtf`  | Rich Text      |
+| `.odt`  | OpenDocument   |
+| `.ppt`  | PowerPoint     |
+| `.pptx` | PowerPoint     |
+| `.xls`  | Excel          |
+| `.xlsx` | Excel          |
+| `.csv`  | Spreadsheet    |
+| `.html` | Web page       |
+| `.md`   | Markdown       |
+
+All of these convert to **PDF**.
+
+> Note: DOC, PPT, XLS based conversions require **Microsoft Office** installed on Windows.
 
 ---
 
 ## 🛠 Tech Stack
 
-- Python 3.10+
-- PyQt6 (GUI)
-- Pillow (image processing)
-- ReportLab (TXT → PDF)
-- comtypes (DOCX/PPT → PDF using Windows Office)
+* Python 3.10+
+* PyQt6 → GUI
+* Pillow → Image conversion
+* ReportLab → TXT → PDF
+* pywin32 → Microsoft Office automation
+* ctypes → Windows taskbar icon binding
 
 ---
 
@@ -60,4 +81,82 @@ Clone the repository:
 ```bash
 git clone https://github.com/yourusername/OpenConvert.git
 cd OpenConvert
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the app:
+
+```bash
+python main.py
+```
+
+---
+
+## 🪟 Windows App Icon Setup
+
+The app uses a real Windows icon:
+
+* Title bar
+* Taskbar
+* Alt+Tab
+
+Make sure `icons/app.ico` exists and contains:
+
+```
+256, 128, 64, 48, 32, 16 px
+```
+
+---
+
+## 🧪 Future Plans
+
+* Drag & Drop support
+* Batch file conversion
+* Linux & macOS support
+* EXE packaging
+* More document formats
+* Format auto-filtering
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+You can help by:
+
+* Improving UI
+* Adding new formats
+* Optimizing performance
+* Writing docs
+
+Just fork the repo and submit a PR.
+
+---
+
+## 📜 License
+
+This project is open-source under the **MIT License**.
+Use it, modify it, share it freely.
+
+---
+
+## 🧠 Why OpenConvert?
+
+OpenConvert is built not just as a tool, but as a learning-focused project that demonstrates:
+
+* Real GUI design
+* Threading in desktop apps
+* Windows integration
+* Clean project structure
+* Open-source collaboration
+
+---
+
+If you’re a student or beginner and want to see how real software is built, OpenConvert is a perfect place to start.
 
